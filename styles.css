@@ -1,0 +1,93 @@
+/* ===========================
+   VARIABLES Y ESTILOS GLOBALES
+============================ */
+:root {
+    --color-principal: #007BFF;
+    --color-secundario: #f4f4f4;
+    --color-texto: #333;
+    --padding-global: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: var(--padding-global);
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+/* ===========================
+   LAYOUT BÁSICO
+============================ */
+
+header,
+footer {
+    background-color: var(--color-principal);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1,
+h2 {
+    color: var(--color-principal);
+}
+
+/* ===========================
+   NAVEGACIÓN
+============================ */
+
+nav {
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   PIE DE PÁGINA
+============================ */
+
+footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+/* ===========================
+   ELEMENTOS VARIOS
+============================ */
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-principal);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
